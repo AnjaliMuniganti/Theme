@@ -1,0 +1,44 @@
+package com.ytp.spring;
+
+import java.util.Map;
+import java.util.Set;
+
+public class Collections {
+	private String name;
+	private Set<String> addresses;
+	private Map<String,String> courses;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Set<String> getAddresses() {
+		return addresses;
+	}
+	public void setAddresses(Set<String> addresses) {
+		this.addresses = addresses;
+	}
+	public Map<String, String> getCourses() {
+		return courses;
+	}
+	public void setCourses(Map<String, String> courses) {
+		this.courses = courses;
+		
+	}
+	public Collections(String name, Set<String> addresses, Map<String, String> courses) {
+		super();
+		this.name = name;
+		this.addresses = addresses;
+		this.courses = courses;
+	}
+	public Collections() {
+		super();
+	}
+	@Override
+	public String toString() {
+		return "Collections [name=" + name + ", addresses=" + addresses + ", courses=" + courses + "]";
+	}
+	
+	
+}
